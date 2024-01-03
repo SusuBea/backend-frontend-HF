@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The HTMLCollection Object</h1>
+<h2>The item() Method</h2>
+
+<p>The content of the first p element in this document is:</p>
+<p id="demo"></p>
+
+<script>
+const collection = document.getElementsByTagName("p");
+//console.log(collection)
+let text = collection.item(0).innerHTML;
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
