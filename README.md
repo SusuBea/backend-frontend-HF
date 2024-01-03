@@ -1,6 +1,6 @@
 # backend-frontend-HF
 
-A feladat során egy egytáblás adatbázist hoztam létre Laravelben. A tábla adatait Axios segítségével jelenítem meg a frontend oldalon egy táblázatban.
+A feladat során egy egytáblás adatbázist hoztam létre Laravelben a 4 alap végponttal. A tábla adatait Axios segítségével jelenítem meg a frontend oldalon egy táblázatban.
 A táblázat alatt egy űrlap is található, melynek a segítségével új adatot tudok felvinni a táblázatba. 
 A táblázat adatait módosítani és törölni is lehet. 
 
