@@ -1,4 +1,4 @@
-# backend-frontend-HF
+# Backend-Frontend-HF
 ## Laravel Axios Form
 
 A feladat során egy egytáblás adatbázist hoztam létre Laravelben a 4 alap végponttal. 
