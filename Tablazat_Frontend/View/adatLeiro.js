@@ -1,20 +1,20 @@
 export const adatLeiro= {
 sorszam:{
-  megjelenes: "No."
+  megjelenes: "Sorsz."
 },
 
 title: { 
-    megjelenes: "Title",
+    megjelenes: "Cím",
     tipus: "text",
     placeholder: "Cím",
     pattern: "[A-Z][a-z]{3}",
-    value: "Title",
+    value: "Cím",
     szoveg: "Legalább 3 betű, a címnek nagybetűvel kell kezdődnie!",
     required: true
   },
 
     date: { 
-      megjelenes: "Date",
+      megjelenes: "Dátum",
       tipus: "date",
       placeholder: "Dátum",
       pattern: "",
@@ -24,7 +24,7 @@ title: {
     },
 
       price: { 
-        megjelenes: "Price",
+        megjelenes: "Ár",
         tipus: "number",
         placeholder: "Ár",
         pattern: {min: "500", max: "10000" },

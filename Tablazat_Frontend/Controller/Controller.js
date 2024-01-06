@@ -26,7 +26,7 @@ export default class  Controller{
 
 
         $(window).on("sorMentes", (e)=>{
-             this.dataService.putData("api/artists", e.detail.artist_id, e.detail,this.hibaCallback)
+             this.dataService.putData("api/artists", e.detail.artist_id, e.detail,this.hibaCallback, this.frissit)
          })
         
     }

@@ -3,23 +3,21 @@ export default class SorView {
 
   constructor(index, obj, szuloElem) {
     this.#obj = obj;
-
     this.index = index;
     this.szuloElem = szuloElem;
- 
-    this.sorElem = this.szuloElem.find("tr:last");
-    //console.log(this.sorElem)
-    this.artistIdElem = this.sorElem.find(".artist_id");
-    this.titleElem = this.sorElem.find(".title");
-    this.DateElem = this.sorElem.find(".date");
-    this.priceElem = this.sorElem.find(".price");
-
     this.htmlOsszerak();
 
+    this.sorElem = this.szuloElem.find("tr:last");
+    this.artistIdElem = this.sorElem.find(".artist_id");
+    this.titleElem = this.sorElem.find(".title");
+    this.dateElem = this.sorElem.find(".date");
+    this.priceElem = this.sorElem.find(".price");
+
+  
     //megfogjuk a törlés és mentés gombot
     this.torlesElem = this.szuloElem.find(".torles:last");
-    this.mentesElem = this.sorElem.children("td").children(".mentes");
-    //console.log(this.mentesElem)
+    this.mentesElem = this.szuloElem.find(".mentes:last");
+
 
 
     this.torlesElem.on("click", () => {
@@ -27,16 +25,13 @@ export default class SorView {
     });
 
 
-    this.mentesElem.on("click", (event) => {
-      
-      //console.log(this.#obj);
-      //console.log(this.sorElem[0]);
+    this.mentesElem.on("click", () => {
       let list2 =  [];
       let list1 = ['artist_id', 'title', 'date', 'price'];
       list2.push(
         this.artistIdElem[0].innerText,
         this.titleElem[0].innerText,
-        this.DateElem[0].innerText,
+        this.dateElem[0].innerText,
         this.priceElem[0].innerText
       );
 
@@ -48,7 +43,7 @@ export default class SorView {
     function toObject(list1, list2){
      const obj = {};
      list1.forEach( (element, index) => {obj[element] = list2[index]} )
-     console.log(obj)
+     //console.log(obj)
      return obj;
   
     }
