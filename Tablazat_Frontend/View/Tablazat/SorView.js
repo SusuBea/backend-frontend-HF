@@ -6,8 +6,10 @@ export default class SorView {
 
     this.index = index;
     this.szuloElem = szuloElem;
+ 
     this.sorElem = this.szuloElem.find("tr:last");
-    this.atistIdElem = this.sorElem.find(".artist_id");
+    //console.log(this.sorElem)
+    this.artistIdElem = this.sorElem.find(".artist_id");
     this.titleElem = this.sorElem.find(".title");
     this.DateElem = this.sorElem.find(".date");
     this.priceElem = this.sorElem.find(".price");
@@ -17,10 +19,13 @@ export default class SorView {
     //megfogjuk a törlés és mentés gombot
     this.torlesElem = this.szuloElem.find(".torles:last");
     this.mentesElem = this.sorElem.children("td").children(".mentes");
+    //console.log(this.mentesElem)
+
 
     this.torlesElem.on("click", () => {
       this.trigger("sorTorles");
     });
+
 
     this.mentesElem.on("click", (event) => {
       
@@ -29,16 +34,12 @@ export default class SorView {
       let list2 =  [];
       let list1 = ['artist_id', 'title', 'date', 'price'];
       list2.push(
-        this.atistIdElem[0].innerText,
+        this.artistIdElem[0].innerText,
         this.titleElem[0].innerText,
         this.DateElem[0].innerText,
         this.priceElem[0].innerText
       );
-      //console.log(this.titleElem[0].innerText)
-      //console.log(this.DateElem[0].innerText)
-      // console.log(this.priceElem[0].innerText)
-      console.log(list1, list2);
-      //console.log(toObject(list1, list2));
+
       this.#obj = toObject(list1, list2);
       this.trigger("sorMentes", this.#obj);
 
@@ -70,7 +71,7 @@ export default class SorView {
       txt += `<td contenteditable="true" class="${key}">${this.#obj[key]}</td>`;
     }
 
-    txt += `<td><button class="torles">Törlés</button></td><td><button class="mentes">Mentés</button></td>`;
+    txt += `<td><button class="torles"> Törlés 🗑 </button></td><td><button class="mentes"> Mentés ✅ </button></td>`;
     txt += "</tr>";
     //Törlés 🗑
 
@@ -81,13 +82,4 @@ export default class SorView {
 
 
 
-
-
-    // function toObject(list) {
-    //   let obj2 = {  };
-    //   for (let i = 0; i < list.length; i++)
-    //   obj2[i] = list[i];
-    //   return obj2;
-    // }
-  
 

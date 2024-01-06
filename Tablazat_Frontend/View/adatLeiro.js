@@ -33,5 +33,15 @@ title: {
         required: true,
       },
       
+      torles: { 
+        megjelenes: "Törlés",
+
+      },
+      
+      mentes: { 
+        megjelenes: "Mentés",
+
+      },
+      
   };
   

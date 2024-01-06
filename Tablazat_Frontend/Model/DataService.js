@@ -35,13 +35,13 @@ export default class DataService {
       .finally(function () {});
   }
 
-  putData(vegpont, id, data, hibaCallback, frissitCallback ) {
+  putData(vegpont, id, data, hibaCallback) {
     axios
       .put(vegpont + "/" + id, data)
       .then(function (response) {
         // handle success
         console.log(response);
-        frissitCallback();
+        //frissitCallback();
       })
       .catch(function (error) {
         // handle error

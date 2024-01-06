@@ -1,70 +1,50 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.adatok table,
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.adatok,
+.urlap {
+  padding: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adatok{
+  padding: 40px;
 }
 
 
 
-
-.adatok table, td, th{
-    border: 1px solid black;
-    padding: 10px;
-
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 22px;
 }
 
-
-
-.adatok, .urlap{
-    padding: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-
+form{
+  font-size: 22px;
 }
 
-
-
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');  
-body {  
-  font-family: 'Montserrat', sans-serif;  
-  padding: 0;  
-  margin: 0;  
-  text-align: center;  
-}  
+button  {
+  padding: 10px;
  
-
-  
-@import "compass/css3";  
-.table-editable {  
-  position: relative;  
-  .glyphicon {  
-    font-size: 20px;  
-  }  
-} */
-
-
-
-
-    td, th {   
-    padding: 10px;   
-    border: 1px solid #ccc;   
-    text-align: left;   
-    font-size: 22px;  
-    }  
-  
-  form{
-    font-size: 22px; 
-  }
-
-button{
-  padding: 3px;
 }
 
-#submit{
+#submit {
   padding: 10px;
   width: 100%;
-  background-color:#ccc;
+  background-color: #ccc;
   border-radius: 10px;
 }
-

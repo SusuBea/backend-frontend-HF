@@ -26,10 +26,7 @@ export default class  Controller{
 
 
         $(window).on("sorMentes", (e)=>{
-            //console.log(e.detail)
-            //const data = this.getData(e.detail) 
-            //const data = {"artist_id":9,"title":"teszt","date":"2020-11-28","price":17891}
-             this.dataService.putData("api/artists", e.detail.artist_id, e.detail,this.hibaCallback , this.frissit)
+             this.dataService.putData("api/artists", e.detail.artist_id, e.detail,this.hibaCallback)
          })
         
     }
@@ -53,5 +50,7 @@ export default class  Controller{
         //console.log(list)
         $(".adatok").html("<table class='table table-striped'><thead></thead><tbody></tbody></table>")
         new TablaView(list, $("table"))
+        
+
     }
 }

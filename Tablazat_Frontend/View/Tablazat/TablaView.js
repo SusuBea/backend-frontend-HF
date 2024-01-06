@@ -6,13 +6,14 @@ export default class TablaView {
   #list = [];
   constructor(list, szuloElem) {
     this.#list = list;
+    this.szuloElem = szuloElem;
 
     // szuloElem.append(`<table class='table table-striped'>
     //                         <thead></thead>
     //                         <tbody></tbody>
     //                     </table>`)
-    // this.szuloElem.find("tbody")
-    // this.szuloElem.find("thead")
+    // // this.szuloElem.find("tbody")
+    // // this.szuloElem.find("thead")
 
     new FejlecView(adatLeiro, $("thead"));
     this.sorMegjelenit();
