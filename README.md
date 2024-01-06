@@ -3,7 +3,7 @@
 
 A feladat során egy egytáblás adatbázist hoztam létre Laravelben a 4 alap végponttal. 
 A tábla adatait Axios segítségével jelenítem meg a frontend oldalon egy táblázatban.
-A táblázat alatt egy űrlap is található, mellyel új adatot tudok felvinni a táblázatba. 
+A táblázat alatt egy űrlap is található, mellyel új adatot tudok felvinni bele. 
 A táblázat adatait módosítani és törölni is lehet. 
 
 
