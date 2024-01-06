@@ -6,4 +6,4 @@ A táblázat alatt egy űrlap is található, melynek a segítségével új adat
 A táblázat adatait módosítani és törölni is lehet. 
 
 
-![image](https://github.com/SusuBea/backend-frontend-HF/assets/86191917/5db41d59-1e78-40aa-90c3-2bd8055b808f)
+![image](https://github.com/SusuBea/backend-frontend-HF/assets/86191917/b8026f01-38a9-45c2-89bd-5d6a52cce74e)
